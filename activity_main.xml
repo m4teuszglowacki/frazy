@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ImageView"
+            android:src="drawable/logo"
+            android:adjustViewBounds="true"
+            android:padding="20dp" />
+
+            <Button
+            android:id="@+id/buttonCopyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ImageView"
+            android:ems="14"
+            android:text="Skopiuj tekst ze schowka"
+            android:textSize="20sp" />
+
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/buttonCopyText"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonFindPhrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="Znajdź fraze"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="Reset"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:text="Reset"
+                android:textSize="20sp" />
+             </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textViewFoundPhrase"
+            android:ems="14"
+            android:text=""
+            android:textSize="20sp"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewFoundPhrase"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/separator"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textViewCopiedText"
+            android:ems="14"
+            android:text=""
+            android:hint="Miejsce dla kopii ze schowka..."
+            android:textSize="20sp"
+            android:paddingBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
